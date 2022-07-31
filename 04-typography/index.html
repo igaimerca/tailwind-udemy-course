@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Typography</title>
-  </head>
-  <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    'serif': ['Tapestry']
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="py-12">
     <!-- Font Family -->
+    <div class="font-sans">Tailwind is awesome!</div>
+    <div class="font-serif">Tailwind is awesome!</div>
+    <div class="font-mono">Tailwind is awesome!</div>
 
     <!-- Font Size -->
+    <div class="text-xs">This is tailwind</div>
+    <div class="text-sm">This is tailwind</div>
+    <div class="text-base">This is tailwind</div>
+    <div class="text-md">This is tailwind</div>
+    <div class="text-lg">This is tailwind</div>
+    <div class="text-xl">This is tailwind</div>
+    <div class="text-9xl">This is tailwind</div>
 
     <!-- Font Weight -->
+    <div class="font-normal">font weight</div>
+    <div class="font-light">font weight</div>
+    <div class="font-bold">font weight</div>
+    <div class="font-medium">font weight</div>
 
     <!-- Letter Spacing -->
+    <div class="tracking-tighter mt-5">let's try letter Spacing</div>
+    <div class="tracking-normal">let's try letter Spacing</div>
+    <div class="tracking-widest">let's try letter Spacing</div>
 
     <!-- Text Alignment -->
+    <div class="text-left">text Alignment</div>
+    <div class="text-center">text Alignment</div>
+    <div class="text-right">text Alignment</div>
 
     <!-- Text Decoration -->
+    <div class="underline decoration-4 decoration-blue-400">text decoration</div>
 
     <!-- Decoration Style -->
+    <div class="underline decoration-double">decoration style</div>
+    <div class="underline decoration-dashed">decoration style</div>
+    <div class="underline decoration-dotted">decoration style</div>
 
     <!-- Decoration Offset -->
+    <div class="underline decoration-4 decoration-blue-400 underline-offset-8">decoration offset</div>
 
     <!-- Text Transform -->
-  </body>
+    <div class="normal-case">Text Transform</div>
+    <div class="uppercase">Text Transform</div>
+    <div class="lowercase">Text Transform</div>
+    <div class="capitalize">Text Transform</div>
+</body>
+
 </html>
 
 <!-- Font Family
